@@ -39,7 +39,7 @@ table = get_exchange_table()
 
 app = Flask(__name__)
 
-channel_secret = os.getnev("CHANNEL_SECRET")
+channel_secret = os.getenv("CHANNEL_SECRET")
 channel_access_token = os.getenv("CHANNEL_ACCESS_TOKEN")
 
 configuration = Configuration(access_token = channel_access_token)
